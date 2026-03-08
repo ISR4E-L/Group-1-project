@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CmdCraft - Custom Commands</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo" onclick="window.scrollTo(0,0)">CmdCraft</a>
+  <nav>
+    <a href="#why">Why</a>
+    <a href="#features">Features</a>
+    <a href="#commands">Examples</a>
+  </nav>
+  <div class="actions">
+    <a href="auth.html" class="signin-link">Sign In</a>
+    <a href="auth.html" class="btn" style="text-decoration: none;">Get Started</a>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Custom Commands.<br>Instant Code.</h1>
+  <p>
+    CmdCraft helps developers create reusable commands for common coding tasks.
+    Instead of rewriting the same code repeatedly, developers can define simple
+    commands and generate code faster.
+  </p>
+  <br><br>
+  <a href="auth.html" class="btn large" style="text-decoration: none;">Start Building Commands</a>
+</section>
+
+<section id="why" class="section">
+  <h2>Why CmdCraft?</h2>
+  <div class="grid">
+    <div class="card"><h3>No repetitive coding</h3><p>Define once and reuse.</p></div>
+    <div class="card"><h3>Simple commands</h3><p>Easy command structure.</p></div>
+    <div class="card"><h3>Save time</h3><p>Work faster with automation.</p></div>
+    <div class="card"><h3>Command library</h3><p>Store your useful commands.</p></div>
+    <div class="card"><h3>Easy to learn</h3><p>Simple interface.</p></div>
+    <div class="card"><h3>Boost productivity</h3><p>Focus on real development.</p></div>
+  </div>
+</section>
+
+<section id="features" class="section">
+  <h2>Features</h2>
+  <div class="grid">
+    <div class="card"><h3>Create Commands</h3><p>Define coding commands.</p></div>
+    <div class="card"><h3>Save Commands</h3><p>Reuse later.</p></div>
+    <div class="card"><h3>Generate Code</h3><p>Instant snippets.</p></div>
+    <div class="card"><h3>Organize</h3><p>Store commands easily.</p></div>
+    <div class="card"><h3>Preview Code</h3><p>See generated code.</p></div>
+    <div class="card"><h3>Developer friendly</h3><p>Clean interface.</p></div>
+  </div>
+</section>
+
+<section id="commands" class="section">
+  <h2>Command Converter</h2>
+  <div class="workspace">
+    <div class="workspace-box">
+      <h3>Type your command</h3>
+      <textarea id="commandInput" placeholder="Add a text"></textarea>
+      <button class="btn" onclick="convertCommand()">Convert</button>
+    </div>
+
+    <div class="workspace-box">
+      <h3>Converted Command</h3>
+      <pre id="ni"></pre>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 CmdCraft • Built for developers</p>
+</footer>
+
+<button id="topBtn" onclick="scrollTopPage()">↑</button>
+
+<script src="script.js"></script>
+
+<script>
+
+function convertCommand() {
+  let text = document.getElementById("commandInput").value;
+  document.getElementById("ni").innerText = "document.getElementById('ni').innerText='groupwork'";
+}
+</script>
+
+</body>
+</html>

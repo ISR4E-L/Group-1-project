@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CmdCraft Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo">CmdCraft</a>
+  <nav>
+    <a href="#">My Commands</a>
+    <a href="#workspace">New Command</a>
+  </nav>
+  <div class="actions">
+    <span id="welcomeUser">Welcome Developer</span>
+    <a href="index.html" class="btn outline" style="text-decoration:none;">Log Out</a>
+  </div>
+</header>
+
+<section class="hero small">
+  <h1>Welcome to CmdCraft</h1>
+  <p>This is your command workspace.</p>
+</section>
+
+<section class="section">
+  <h2>How CmdCraft Works</h2>
+  <div class="grid">
+    <div class="card"><h3>1. Create Command</h3><p>Give your command a short name and describe its purpose.</p></div>
+    <div class="card"><h3>2. Save Command</h3><p>Your command is stored for reuse in future projects.</p></div>
+    <div class="card"><h3>3. Use Command</h3><p>Use your saved command to quickly generate code.</p></div>
+    <div class="card highlight"><h3>Start Creating</h3><p>Create your first command to simplify coding tasks.</p></div>
+    <div class="card"><h3>Reusable</h3><p>Use commands anytime.</p></div>
+    <div class="card"><h3>Faster Coding</h3><p>Save development time.</p></div>
+  </div>
+  <br><br>
+  <a href="#workspace" class="btn large" style="text-decoration: none;">Create Command</a>
+</section>
+
+<section id="workspace" class="section">
+  <h2>Command Workspace</h2>
+  <div class="workspace">
+    <div class="workspace-box">
+      <h3>Your Command</h3>
+      <textarea id="commandText" placeholder="Type command here"></textarea>
+      <div class="workspace-buttons">
+        <button class="btn" onclick="generateCode()">Save</button>
+        <button class="btn outline" onclick="clearCommand()">Clear</button>
+      </div>
+    </div>
+    <div class="workspace-box">
+      <h3>Generated Code</h3>
+      <pre id="generated"></pre>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>CmdCraft • Developer productivity tool</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
